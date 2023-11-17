@@ -1,4 +1,4 @@
-This site is live @ postal-information-finder.netlify.com
+This site is live @ https://postal-information-finder.netlify.com
 
 # Getting Started with Create React App
 
