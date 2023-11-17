@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul{
+  margin: 20px auto;
+  width: 70%;
+  display:flex;
+  flex-wrap:wrap;
+  column-gap: 40px;
+  row-gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+ul li{
+  list-style-type: none;
+}
+
+.error{
+  color: rgb(255, 0, 0);
+}
+
+.container{
+  min-height: 100vh;
+  max-width: 100vw;
+  background-color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h1{
+  color: aqua;
+  top:5px;
+}
+.user-input-form form {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-input-form input{
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0 0 0 1.5px rgb(0, 102, 255);
+  transition: all 0.1s ease-in;
+
+  &:hover,&:active,&:focus{
+    box-shadow: 0 0 5px 4px rgb(7, 212, 248);
+    outline: none;
+  }
+}
+
+.user-input-form button{
+  margin: 10px;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgba(0, 0, 212, 0.863);
+  color: white;
+  transition: all 0.2s ease-in;
+
+  &:hover{
+    cursor: pointer;
+    background-color: rgb(25, 0, 255);
+  }
+}
+
+.location-info{
+  color: rgb(255, 255, 255);
+  height: auto;
+  width: auto;
+  text-align: center;
+  overflow: auto;
+  animation: slideUp 0.5s ease-in-out;
+}
+
+@keyframes slideUp {
+  from{
+    margin-top: 200px;
+  }
+  to{
+    margin-top: 0;
+    }
+}
+
+.location-info p,.location-info ul span{
+  margin: 10px;
+  font-size: 35px;
+  font-weight: 700;
+  animation: slideDown 0.5s ease-in-out;
+}
+
+.postal-data{
+  margin-top: -5px;
+  font-weight: 600;
+  font-size: 25px;
+  display: block;
+  animation: slideDown 1s ease-in;
+}
+
+@keyframes slideDown {
+  from{
+    transform: scale(0);
+    opacity: 0;
+  }
+  to{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.buttons .reset-btn{
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgba(146, 146, 175, 0.863);
+  color: white;
+}
+
+.location-info ul span{
+width: 100%;
+}
+
+li{
+  animation: slideDown 1s ease-in-out;
+}
